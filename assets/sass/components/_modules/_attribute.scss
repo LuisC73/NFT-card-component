@@ -1,0 +1,22 @@
+@use "../_utilities/variables" as *;
+@use "../_utilities/mixins" as *;
+
+.attribution {
+  margin-top: 40px;
+  @include flex(center, center, column, 10px);
+
+  @include responsive("Desktop") {
+    flex-direction: row;
+  }
+
+  &__p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: $color-white;
+  }
+
+  &__a {
+    font-size: 1.2rem;
+    color: $color-primary;
+  }
+}

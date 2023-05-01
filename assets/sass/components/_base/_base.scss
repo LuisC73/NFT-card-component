@@ -1,0 +1,15 @@
+@use "../_utilities/variables" as *;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-primary;
+  overflow: hidden;
+}
